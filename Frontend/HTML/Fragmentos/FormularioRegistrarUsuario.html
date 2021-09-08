@@ -16,19 +16,19 @@
                 <h3>Información de Entrega</h3>
                 <div class="divPrimarios">
                     <label for="registronombre">Nombres</label>
-                    <input id="registronombre" type="text" required />
+                    <input id="registronombre" type="text" required autocomplete="given-name"/>
                 </div>
                 <div class="divPrimarios">
                     <label for="registronombre">Apellidos</label>
-                    <input id="registronombre" type="text" required />
+                    <input id="registronombre" type="text" required autocomplete="family-name"/>
                 </div>
                 <div class="divPrimarios">
                     <label for="registrodireccion">Direccion</label>
-                    <input id="registrodireccion" type="text" required />
+                    <input id="registrodireccion" type="text" required autocomplete="street-address"/>
                 </div>
                 <div class="divPrimarios">
                     <label for="registrodireccion">Informacion Adicional</label>
-                    <input id="registrodireccion" type="text" required  placeholder="Ejemplo: Torre, Apartamento, Stand"/>
+                    <input id="registrodireccion" type="text" required  placeholder="Ejemplo: Torre, Apartamento, Stand" autocomplete="address-line1"/>
                 </div>
                 <div class="divPrimarios">
                     <label for="registroListaDepartamento">Departamento</label>
@@ -80,10 +80,10 @@
                     <input id="registroemail" type="email" autocomplete="email" required /></div>
 
                 <div class="divPrimarios"><label for="registrotelefono">Telefono</label>
-                    <input id="registrotelefono" type="tel" /></div>
+                    <input id="registrotelefono" type="tel" required autocomplete="tel"/></div>
 
                 <div class="divPrimarios"> <label for="registroListaTipoDeDocumento">Tipo de documento</label>
-                    <select id="registroListaTipoDeDocumento">
+                    <select id="registroListaTipoDeDocumento" required>
                         <option></option>
                         <option value="Cédula de ciudadanía">Cédula de ciudadanía</option>
                         <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
@@ -101,13 +101,13 @@
                     </select></div>
 
                 <div class="divPrimarios"><label for="registrodocumento">Documento</label>
-                    <input id="registrodocumento" type="text" /></div>
+                    <input id="registrodocumento" type="text" required/></div>
 
                 <div class="divPrimarios"><label for="registrousername">Nombre de Usuario</label>
-                    <input id="registrousername" type="text" /></div>
+                    <input id="registrousername" type="text" required autocomplete="username"/></div>
 
                 <div class="divPrimarios"><label for="registrousername">Contrasena</label>
-                    <input id="registrousername" type="password" /></div>
+                    <input id="registrousername" type="password" required autocomplete="off"/></div>
 
             </section>
             <button>Registrar</button>

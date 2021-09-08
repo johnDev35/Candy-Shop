@@ -1,27 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../../CSS/FomularioRegistrarUsuario.css" />
 </head>
+
 <body>
-    <main><form>
-        <label>Nombre de Usuario</label>
-        <input/>
-        <label>Nombre</label>
-        <input/>
-        <label>Tipo de Documento</label>
-        <input/>
-        <label>Documento</label>
-        <input/>
-        <label>Telefono</label>
-        <input/>
-        <label>Direccion</label>
-        <input/>
-        <label>Email</label>
-        <input/>
-    </form></main>
+    <main>
+        <form class="formularioRegistro">
+            <section class="formularioContainerGrande">
+                <h3>Información de Entrega</h3>
+                <div class="divPrimarios">
+                    <label for="registronombre">Nombres</label>
+                    <input id="registronombre" type="text" required />
+                </div>
+                <div class="divPrimarios">
+                    <label for="registronombre">Apellidos</label>
+                    <input id="registronombre" type="text" required />
+                </div>
+                <div class="divPrimarios">
+                    <label for="registrodireccion">Direccion</label>
+                    <input id="registrodireccion" type="text" required />
+                </div>
+                <div class="divPrimarios">
+                    <label for="registroListaDepartamento">Departamento</label>
+                    <select id="registroListaDepartamento" required class="lista">
+                        <option></option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Antioquia">Antioquia</option>
+                        <option value="Arauca">Arauca</option>
+                        <option value="Archipielago De San Andres">
+                            Archipielago De San Andres
+                        </option>
+                        <option value="Atlantico">Atlantico</option>
+                        <option value="Bogota">Bogota Dc</option>
+                        <option value="Bolivar">Bolivar</option>
+                        <option value="Boyaca">Boyaca</option>
+                        <option value="Caldas">Caldas</option>
+                        <option value="Caqueta">Caqueta</option>
+                        <option value="Casanare">Casanare</option>
+                        <option value="Cauca">Cauca</option>
+                        <option value="Cesar">Cesar</option>
+                        <option value="Choco">Choco</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Cundinamarca">Cundinamarca</option>
+                        <option value="Guajira">Guajira</option>
+                        <option value="Huila">Huila</option>
+                        <option value="Magdalena">Magdalena</option>
+                        <option value="Meta">Meta</option>
+                        <option value="Narino">Narino</option>
+                        <option value="Norte De Santander">Norte De Santander</option>
+                        <option value="Putumayo">Putumayo</option>
+                        <option value="Quindio">Quindio</option>
+                        <option value="Risaralda">Risaralda</option>
+                        <option value="Santander">Santander</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Tolima">Tolima</option>
+                        <option value="Valle">Valle Del Cauca</option>
+                        <option value="Vaupes">Vaupes</option>
+                        <option value="Vichada">Vichada</option>
+                    </select>
+                </div>
+                <div class="divPrimarios">
+                    <label for="registroCiudad">Ciudad</label>
+                    <input id="registroCiudad" type="text" required />
+                </div>
+            </section>
+            <section class="formularioContainerGrande">
+                <h3>Información de Contacto</h3>
+                <div class="divPrimarios"><label for="registroemail">Correo Electrónico</label>
+                    <input id="registroemail" type="email" autocomplete="email" required /></div>
+
+                <div class="divPrimarios"><label for="registrotelefono">Telefono</label>
+                    <input id="registrotelefono" type="tel" /></div>
+
+                <div class="divPrimarios"> <label for="registroListaTipoDeDocumento">Tipo de documento</label>
+                    <select id="registroListaTipoDeDocumento">
+                        <option></option>
+                        <option value="Cédula de ciudadanía">Cédula de ciudadanía</option>
+                        <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                        <option value="Tarjeta de extranjería">
+                            Tarjeta de extranjería
+                        </option>
+                        <option value="NIT">NIT</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                        <option value="Tipo de documento extranjero">
+                            Tipo de documento extranjero
+                        </option>
+                        <option value="Registro civil de nacimiento">
+                            Registro civil de nacimiento
+                        </option>
+                    </select></div>
+
+                <div class="divPrimarios"><label for="registrodocumento">Documento</label>
+                    <input id="registrodocumento" type="text" /></div>
+
+                <div class="divPrimarios"><label for="registrousername">Nombre de Usuario</label>
+                    <input id="registrousername" type="text" /></div>
+
+                <div class="divPrimarios"><label for="registrousername">Contrasena</label>
+                    <input id="registrousername" type="password" /></div>
+
+            </section>
+            <button>Registrar</button>
+        </form>
+    </main>
 </body>
+
 </html>

@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+img {
+  display: inline;
+  max-width: 12rem;
+}
+a {
+  font-size: 2rem;
+}
+.price {
+  font-size: 2.4rem;
+  padding: 1rem;
+}
+.tableHeader {
+  font-size: 5rem;
+  text-align: left;
+}
+.checkoutInput {
+  height: 4rem;
+  width: 6rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.checkoutInputContainer {
+  width: 10rem;
+  justify-content: left;
+}
+.checkoutInputActions {
+  font-size: 2rem;
+  justify-content: left;
+}
+.checkoutInputActions button {
+  border-radius: 0.4rem;
+  margin: 0.4rem;
+}
+.tableHeaderPrice {
+  width: 10rem;
+}
+.productDescription {
+  padding: 1rem;
+}
+th,
+td {
+  border-bottom: 1px solid #ddd;
+}
+.TituloCheckout {
+  display: block;
+}
+.TituloCheckout h1 {
+  font-size: 4rem;
+}
+.CheckoutIzq {
+    font-size: 4rem;
+}

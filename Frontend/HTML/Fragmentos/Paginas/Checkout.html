@@ -6,33 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="../../../CSS/Checkout.css" />
+    <script src="../../../JS/Checkout.js"> </script>
 </head>
 
 <body>
     <main>
-        <div class="TituloCheckout"><h1>Tu carrito</h1></div>
+        <div class="TituloCheckout">
+            <h1>Tu carrito</h1>
+        </div>
         <div>
-        <div class="CheckoutDere">
-        <table>
-            <thead class="tableHeader">
-                <tr>
-                    <th>Producto</th>
-                    <th class="tableHeaderPrice">Precio</th>
-                    <th>Cantidad</th>
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-sm-12 col-lg-8">
+                        <table>
+                            <thead class="tableHeader">
+                                <tr>
+                                    <th class="tableHeaderProduct">Producto</th>
+                                    <th class="tableHeaderPrice">Precio</th>
+                                    <th>Cantidad</th>
 
-                </tr>
-            </thead>
-            <tbody>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                <tr>
-                    <td>
-                        <!-- Los atributos de la imagen deben ser dinamicos cuando la pagina sea dinamica -->
-                        <div><img alt='Snickers' src='https://m.media-amazon.com/images/I/71+r1gAwsZL._SX425_.jpg'>
-                            </img>
-                            <!-- Cuando sea dinamico el href de este anchor tag debe apuntar a la pagina del producto -->
-                            <div class="productDescription"><a>Snickers 30gr.</a></div>
-                        </div>
+                                <tr>
+                                    <td>
+                                        <!-- Los atributos de la imagen deben ser dinamicos cuando la pagina sea dinamica -->
+                                        <div class="container-fluid">
+                                            <div class="row justify-content-around">
+                                                <div class="col-sm-12 col-lg-8"><img alt='Snickers'
+                                                        src='../../../../Bases de Datos/Imágenes dulces/Chocomelos_Masmelos.png'>
+                                                    </img>
+                                                </div>
+                                                <!-- Cuando sea dinamico el href de este anchor tag debe apuntar a la pagina del producto -->
+                                                <div class="productDescription col-sm-12 col-lg-4 align-self-center"><a>Chocomelos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </div>
                     </td>
                     <!-- El texto dentro del span debe ser dinamico.-->
                     <td><span class='price'>20.000</span></td>
@@ -43,70 +66,105 @@
                         <div class='checkoutInputActions'><button>Cambiar</button></div>
                         <div class='checkoutInputActions'><button>Eliminar</button></div>
                     </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Los atributos de la imagen deben ser dinamicos cuando la pagina sea dinamica -->
+                            <div class="container-fluid">
+                                <div class="row justify-content-around">
+                                    <div class="col-sm-12 col-lg-8"><img alt='Snickers'
+                                            src='../../../../Bases de Datos/Imágenes dulces/ChocoBreak_Chocolate.png'>
+                                        </img>
+                                    </div>
+                                    <!-- Cuando sea dinamico el href de este anchor tag debe apuntar a la pagina del producto -->
+                                    <div class="productDescription col-sm-12 col-lg-4 align-self-center"><a>Chocobreak</a>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                </td>
+                <!-- El texto dentro del span debe ser dinamico.-->
+                <td><span class='price'>15 000</span></td>
+                <td>
+                    <!-- el atributo value debe ser cambiado por js cuando se vuelva dinamico, Los botones deben tener mejor estilo -->
+                    <div class='checkoutInputContainer'><label></label> <input class="checkoutInput" type="number"
+                            value="1" /></div>
+                    <div class='checkoutInputActions'><button>Cambiar</button></div>
+                    <div class='checkoutInputActions'><button>Eliminar</button></div>
+                </td>
                 </tr>
                 <tr>
                     <td>
                         <!-- Los atributos de la imagen deben ser dinamicos cuando la pagina sea dinamica -->
-                        <div><img alt='Snickers' src='https://m.media-amazon.com/images/I/71+r1gAwsZL._SX425_.jpg'>
-                            </img>
-                            <!-- Cuando sea dinamico el href de este anchor tag debe apuntar a la pagina del producto -->
-                            <div class="productDescription"><a>Snickers 30gr.</a></div>
+                        <div class="container-fluid">
+                            <div class="row justify-content-around">
+                                <div class="col-sm-12 col-lg-8"><img alt='Snickers'
+                                        src='../../../../Bases de Datos/Imágenes dulces/Supercoco_Bombones.png'>
+                                    </img>
+                                </div>
+                                <!-- Cuando sea dinamico el href de este anchor tag debe apuntar a la pagina del producto -->
+                                <div class="productDescription col-sm-12 col-lg-4 align-self-center"><a>Supercoco</a>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                    <!-- El texto dentro del span debe ser dinamico.-->
-                    <td><span class='price'>20.000</span></td>
-                    <td>
-                        <!-- el atributo value debe ser cambiado por js cuando se vuelva dinamico, Los botones deben tener mejor estilo -->
-                        <div class='checkoutInputContainer'><label></label> <input class="checkoutInput" type="number"
-                                value="1" /></div>
-                        <div class='checkoutInputActions'><button>Cambiar</button></div>
-                        <div class='checkoutInputActions'><button>Eliminar</button></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <!-- Los atributos de la imagen deben ser dinamicos cuando la pagina sea dinamica -->
-                        <div><img alt='Snickers' src='https://m.media-amazon.com/images/I/71+r1gAwsZL._SX425_.jpg'>
-                            </img>
+            </div>
+            </td>
+            <!-- El texto dentro del span debe ser dinamico.-->
+            <td><span class='price'>12.000</span></td>
+            <td>
+                <!-- el atributo value debe ser cambiado por js cuando se vuelva dinamico, Los botones deben tener mejor estilo -->
+                <div class='checkoutInputContainer'><label></label> <input class="checkoutInput" type="number"
+                        value="1" /></div>
+                <div class='checkoutInputActions'><button>Cambiar</button></div>
+                <div class='checkoutInputActions'><button>Eliminar</button></div>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Los atributos de la imagen deben ser dinamicos cuando la pagina sea dinamica -->
+                    <div class="container-fluid">
+                        <div class="row justify-content-around">
+                            <div class="col-sm-12 col-lg-8"><img alt='Snickers'
+                                    src='../../../../Bases de Datos/Imágenes dulces/Splash_Gomitas.jpg'>
+                                </img>
+                            </div>
                             <!-- Cuando sea dinamico el href de este anchor tag debe apuntar a la pagina del producto -->
-                            <div class="productDescription"><a>Snickers 30gr.</a></div>
+                            <div class="productDescription col-sm-12 col-lg-4 align-self-center"><a>Gomitas Splash</a>
+                            </div>
                         </div>
-                    </td>
-                    <!-- El texto dentro del span debe ser dinamico.-->
-                    <td><span class='price'>20.000</span></td>
-                    <td>
-                        <!-- el atributo value debe ser cambiado por js cuando se vuelva dinamico, Los botones deben tener mejor estilo -->
-                        <div class='checkoutInputContainer'><label></label> <input class="checkoutInput" type="number"
-                                value="1" /></div>
-                        <div class='checkoutInputActions'><button>Cambiar</button></div>
-                        <div class='checkoutInputActions'><button>Eliminar</button></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <!-- Los atributos de la imagen deben ser dinamicos cuando la pagina sea dinamica -->
-                        <div><img alt='Snickers' src='https://m.media-amazon.com/images/I/71+r1gAwsZL._SX425_.jpg'>
-                            </img>
-                            <!-- Cuando sea dinamico el href de este anchor tag debe apuntar a la pagina del producto -->
-                            <div class="productDescription"><a>Snickers 30gr.</a></div>
-                        </div>
-                    </td>
-                    <!-- El texto dentro del span debe ser dinamico.-->
-                    <td><span class='price'>20.000</span></td>
-                    <td>
-                        <!-- el atributo value debe ser cambiado por js cuando se vuelva dinamico, Los botones deben tener mejor estilo -->
-                        <div class='checkoutInputContainer'><label></label> <input class="checkoutInput" type="number"
-                                value="1" /></div>
-                        <div class='checkoutInputActions'><button>Cambiar</button></div>
-                        <div class='checkoutInputActions'><button>Eliminar</button></div>
-                    </td>
-                </tr>
-            </tbody>
+                    </div>
+        </div>
+        </td>
+        <!-- El texto dentro del span debe ser dinamico.-->
+        <td><span class='price'>25.000</span></td>
+        <td>
+            <!-- el atributo value debe ser cambiado por js cuando se vuelva dinamico, Los botones deben tener mejor estilo -->
+            <div class='checkoutInputContainer'><label></label> <input class="checkoutInput" type="number" value="1" />
+            </div>
+            <div class='checkoutInputActions'><button>Cambiar</button></div>
+            <div class='checkoutInputActions'><button>Eliminar</button></div>
+        </td>
+        </tr>
+        </tbody>
         </table>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="ContainerCheckout">
+            <h1>Resumen del pedido</h1>
+            <div class="DescripcionCheckout">
+                <p>Precio productos: 100000</p>
+                <p>Precio del envio: 9000</p>
+                <p>Precio Total: 109000</p>
+            </div>
+            <div class='CheckoutFinal'> <button>Proceder al Checkout</button></div>
+        </div>
+        </div>
     </div>
-        <!-- Aqui va un div al lado izq de la pagina. -->
-        <div class="CheckoutIzq"><h1>Carrito xd</h1></div>
-    </div>
+        </div>
+
+
+
+        </div>
     </main>
 </body>
 

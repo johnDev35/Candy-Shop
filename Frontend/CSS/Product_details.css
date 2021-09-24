@@ -1,4 +1,4 @@
-main{
+body{
     background-color:rgb(245, 234, 245);
 
     color: #2c2c2c;
@@ -6,34 +6,54 @@ main{
 
 .name{
     font-family: Arial;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 5%;
 }
 
 .container{
-    margin: 25px;
+    margin: 4%;
     display: grid;
-    grid-template-columns: 60% 40%;
-    gap: 20px;
+    grid-template-columns: 100%;
+    gap: 1.2rem;
     font-family:sans-serif;
+}
+
+@media only screen and (min-width: 640px){
+    .container{
+        margin: 4%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        
+        gap: 1.2rem;
+        font-family:sans-serif;
+    }
+    .buy button {
+        border-radius: 25px;
+        font-size: 110%;
+        padding: 2% 30%;
+        /*padding: 10px 220px;*/
+        border: none;
+        color:#fff;
+        cursor: pointer;
+        background-color: #e4a7e1c5;
+    }
+    
+
 }
 
 .image-box img{
     width: 80%;
 }
 
-.image-box{
-    align-items: center;
-    width: auto;
-    
-}
+
 
 .buy p {
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 .buy button {
-    border-radius: 25px;
-    font-size: 18px;
-    padding: 10px 220px;
+    border-radius: 2rem;
+    font-size: 110%;
+    padding: 2% 40%;
+    /*padding: 10px 220px;*/
     border: none;
     color:#fff;
     cursor: pointer;
